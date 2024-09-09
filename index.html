@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="landingpage">
+        <div class="flex w-[400px] justify-center items-center border-solid	bg-[url('https://cdn.pixabay.com/photo/2016/11/14/03/16/book-1822474_1280.jpg')] w-full h-[585px] bg-cover bg-no-repeat bg-center" >
+            <div> 
+                <button id="reg" class="bg-white  px-[10px] py-[4px] ml-[55px] my-[30px]">REGISTER</button>
+                <br>
+                <button id="prevwinners" class="bg-black text-white px-[10px] py-[4px]">VIEW PREVIOUS WINNERS</button>
+                <br>
+                <button id="login" class="bg-white px-[10px] py-[4px] my-[30px]  ml-[65px]">LOGIN</button>
+            </div>
+        </div>
+    </div>
+    <form id="registrationPage" class="hidden ">
+        <div class="bg-[url('https://cdn.pixabay.com/photo/2020/02/08/09/52/chalk-4829602_1280.jpg')] w=[80px] h-[284px] bg-cotain bg-no-repeat bg-center">
+          <!-- <p class="text-center font-bold text-4xl text-white py-[100px]">LUMEN ET VERITAS INTERNATIONAL ACADEMY <br>QUIZ COMPRTITION</p> -->
+        </div>
+        <div>
+          <p class="text-center font-bold text-2xl pt-[40px]"><u>REGISTRATION</u></p>
+          <div id="form1" class="px-[210px] py-[40px]">
+              <div class="flex gap-[190px]">
+                  <div>
+                      <p>NAME OF SCHOOL:</p>
+                      <input id="schname" class="border-solid border-2 border-black rounded-sm pl-[10px] w-[300px] mt-[15px]" type="text">
+                      <p id="schnameerror" class="hidden text-red-500 text-[9px] ">cannot be empty</p>
+                  </div>
+                  <div>
+                      <p>ADDRESS</p>
+                      <input id="address" class="border-solid border-2 border-black rounded-sm pl-[10px] w-[300px] mt-[15px]" type="text">
+                      <p id="addresserror" class="hidden text-red-500 text-[9px] ">cannot be empty</p>
+                  </div>
+              </div>
+              <div class="flex gap-[190px]">
+                  <div>
+                      <p>EMAIL:</p>
+                      <input id="email" class="border-solid border-2 border-black rounded-sm pl-[10px] w-[300px] mt-[15px]" type="email">
+                      <p id="emailerror" class="hidden text-red-500 text-[9px] ">cannot be empty</p>
+                  </div>
+                  <div>
+                      <p>CANDIDATE'S NAME:</p>
+                      <input id="name" class="border-solid border-2 border-black rounded-sm pl-[10px] w-[300px] mt-[15px]" type="text" name="" id="">
+                      <p id="nameerror" class="hidden text-red-500 text-[9px] ">cannot be empty</p>
+                  </div>
+      
+              </div>
+              <div class="flex gap-[190px]">
+                  <div>
+                      <p>CANDIDATE AGE:</p>
+                      <input id="age" class="border-solid border-2 border-black rounded-sm pl-[10px] w-[300px] mt-[15px]" type="text">
+                      <p id="ageerror" class="hidden text-red-500 text-[9px] ">cannot be empty</p>
+                      <p id="ageerror1" class="hidden text-red-500 text-[9px] ">figures only</p>
+                  </div>
+                  <div>
+                      <p>PASSWORD:</p>
+                      <input id="password" class="border-solid border-2 border-black rounded-sm pl-[10px] w-[300px] mt-[15px]" type="password" name="" id="">
+                      <p id="passworderror" class="hidden text-red-500 text-[9px] ">cannot be empty</p>
+                  </div>
+      
+              </div>
+              <button class="bg-blue-300 p-[6px] mt-[20px]">SUBMIT</button>
+            </div>
+          <div class="text-center bg-white shadow-2xl	mx-[250px] w-[700px] m-[20px] p-[5px]">
+              <p><u>Registration Deadline</u></p>
+              <span class="text-sm">December 20, 2024</span>
+              <p>Late registrations will incur an additional fee of 5,000 Naira, applicable to all submissions made after the official deadline.</p>
+      
+          </div>
+      
+        </div>
+    </form>
+    <div id="pastwinners" class="hidden bg-gradient-to-b from-blue-300 to-white">
+
+        <div>
+            <p class="text-center font-bold text-2xl pt-[40px]">Preceding champions</p>
+            <div class="px-[500px] my-[30px]">
+               <div class="flex gap-[200px]">
+                 <p>SCHOOL</p>
+                 <p>YEAR</p>
+               </div>
+            </div>
+            <div class="flex gap-[200px] ml-[450px]">
+                <div>
+                  <p class="mt-10px">Bristol Academy</p> 
+                  <p class="mt-10px">School for the gifted</p>
+                  <p class="mt-10px">Grace of God schools</p> 
+                  <p class="mt-10px">Grace of God schools</p> 
+                  <p class="mt-10px">Noble Heights Academy </p> 
+                  <p class="mt-10px">Gifted Kids Academy</p> 
+                </div>
+                <div>
+                  <p class="mt-10px">2018</p>
+                  <p class="mt-10px">2019</p>
+                  <p class="mt-10px">2020</p>
+                  <p class="mt-10px">2021</p>
+                  <p class="mt-10px">2022</p>
+                  <p class="mt-10px">2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="loginpage" class="hidden">
+        <div class="bg-[url('https://cdn.pixabay.com/photo/2021/02/02/23/09/quiz-5975814_1280.png')] w=[80px] h-[284px] bg-cotain bg-no-repeat bg-center">
+          </div>
+          <div>
+            <p class="text-center font-bold text-2xl pt-[40px]"><u>LOGIN</u></p>
+            <form id="form2" class="px-[210px] py-[40px]">
+                <div class="flex gap-[190px]">
+                    <div>
+                        <p>NAME OF SCHOOL:</p>
+                        <input id="loginschoolname" class="border-solid border-2 border-black rounded-sm pl-[10px] w-[300px] mt-[15px]" type="text">
+                        <p id="loginschoolnameerror1" class="hidden text-red-500 text-[9px]">cannot be empty</p>
+                        <p id="loginschoolnameerror2" class="hidden text-red-500 text-[9px]">Does not match</p>
+                    </div>
+                    <div>
+                        <p>CANDIDATE'S NAME:</p>
+                        <input id="loginname" class="border-solid border-2 border-black rounded-sm pl-[10px] w-[300px] mt-[15px]" type="text" name="" >
+                        <p id="loginnameerror" class="hidden text-red-500 text-[9px]">cannot be empty</p>
+                    </div>
+                </div>
+                <div class="flex gap-[190px]">
+                    <div>
+                        <p>CANDIDATE AGE:</p>
+                        <input id="loginage" class="border-solid border-2 border-black rounded-sm pl-[10px] w-[300px] mt-[15px]" type="text">
+                        <p id="loginageerror1" class="hidden text-red-500 text-[9px]">cannot be empty</p>
+                        <p id="loginageerror2" class="hidden text-red-500 text-[9px]">Does not match</p>
+                    </div>
+                    <div>
+                        <p>PASSWORD:</p>
+                        <input id="loginpassword" class="border-solid border-2 border-black rounded-sm pl-[10px] w-[300px] mt-[15px]" type="password" name="" >
+                        <p id="loginpassworderror" class="hidden text-red-500 text-[9px]">cannot be empty</p>
+                    </div>
+        
+                </div>
+                <button id="loginbtn" class="bg-blue-300 p-[6px] mt-[20px]">LOGIN</button>
+                <p id="botherror" class="hidden text-red-500 text-[12px]">INVALID NAME OR PASSWORD</p>
+            </form>
+        </div>    
+    </div>
+    <div id="questions" class="hidden bg-[url('https://i.pinimg.com/564x/43/b9/81/43b981342d73f807433c804a5402019d.jpg')] w-full h-[585px] mb-[ 60px]  bg-cover bg-no-repeat bg-center">
+        <div class="flex gap-[20px]">
+            <p id="times" class="text-white font-bold">TIMER:</p>
+            <p id="timer" class="text-white font-bold">TIMER = 00:00</p>
+        </div>
+        <div class="text-white font-bold text-2xl py-[95px] pr-[150px] ml-[200px]  text-center">
+            <p id="mainQuestions"></p>
+        </div>
+            <div class="flex gap-[185px] text-white px-[140px] pt-[70px]">
+                <p id="ans11" class=" px-[190px] py-[40px]"></p>
+                <p id="ans22" class=" px-[190px] py-[40px]"></p>
+            </div>
+            <div class="flex gap-[185px] text-white px-[140px] pt-[50px]">
+                <p id="ans33" class=" px-[190px] py-[35px]"></p>
+                <p id="ans44" class=" px-[190px] py-[35px]"></p>
+            </div>
+    </div>
+    <div id="timeoutt" class="hidden bg-gradient-to-b from-blue-300 to-white w-full h-[585px] flex items-center justify-center">
+        <div class="bg-white h-[200px] w-[450px] mx-[370px] p-[17px]">
+            <p class="text-center font-bold">CONGRATULATIONS</p>
+            <div class="flex gap-[30px] ml-[15px]">
+                <p>NAME:</p>
+                <p id="nameeeeee"></p>
+            </div>
+            <div class="flex gap-[30px]">
+                <p>SCHOOL:</p>
+                <p id="schoolllll">erg4w5y</p>
+            </div>
+            <div class="my-[50px]">
+                <p>Congratulations! We're so very proud of you! · Your hard work and perseverance have paid off. </p>
+            </div>
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
