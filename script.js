@@ -152,10 +152,6 @@ document.getElementById('form2').addEventListener('submit', function(event){
         alert('login successfull')
         document.getElementById('loginpage').style.display="none"
         document.getElementById('questions').style.display="block"            
-        // setTimeout(() => {
-        //     document.getElementById('questions').style.display="none"            
-        // }, 120000);
-        // document.getElementById('timeoutt').style.display="block"            
         localStorage.setItem('loginForQuiz',JSON.stringify(loginDetails))
     }
 });
@@ -235,13 +231,25 @@ function endQuiz() {
     let schoolID = QuizDett.schname;
     let studentName = QuizDett.name;
 
+    
+    
     // Calculate and display score
     let percentage = (score / (maxQuestions * pointsPerCorrectAnswer)) * 100;
     document.getElementById('timer').innerHTML = schoolID + ", " + studentName + " Final Score: " + percentage.toFixed(2) + "%";
     document.getElementById('timer').style.display = "block"; // Make sure timer is visible to show final score
-
+    
     if (timeElapsed) {
         document.getElementById('timer').innerHTML = "Time out! " + document.getElementById('timer').innerHTML;
+    }
+
+    let popup = setTimeout(() => {
+        document.getElementById('questions').style.display= 'none';
+    }, 15000);
+    document.getElementById('timeoutt').style.display= 'block';
+
+    if (percentage === "0.00%"){
+        clearTimeout(popup)
+        document.getElementById('timeoutt').style.display= 'none';
     }
 }
 
